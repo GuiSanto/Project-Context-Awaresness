@@ -39,4 +39,19 @@
     <string name="exerciceTitle2">Neck Rotation</string>
     <string name="exerciceTitle3">Neck Side Bend</string>
     <string name="exerciceTitle4">Shoulder Shrug</string>
+    <string name="get_some_rest">Get some rest!</string>
+    <string name="computer">TODO</string>
+    <string name="description1">It is important to take a break from time to time, or else your health will deteorate down the line</string>
+    <string name="next1">Next</string>
+    <string name="title2">Take a Break</string>
+    <string name="description2">This app will notify you to take a break and so some simple exercices</string>
+    <string name="stretch">TODO</string>
+    <string name="next2">Next</string>
+    <string name="check">TODO</string>
+    <string name="title3">Permissions</string>
+    <string name="description3">In order for this application to be fully functioning, you need to accept the requested permissions. No sensible data will be collected</string>
+    <string name="next3">Finish</string>
+    <string name="home">Home</string>
+    <string name="infodescription">This application was developed in the ambit of the Context Aware Systems class</string>
+
 </resources>
