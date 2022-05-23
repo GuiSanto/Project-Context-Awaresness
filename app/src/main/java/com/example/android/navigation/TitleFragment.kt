@@ -25,6 +25,7 @@ class TitleFragment : Fragment() {
              */
         }
 
+
         setHasOptionsMenu(true)
         return binding.root
     }

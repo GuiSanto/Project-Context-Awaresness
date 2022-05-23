@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">Android Trivia</string>
+    <string name="app_name">Stay Active</string>
     <string name="game_over">Game Over</string>
     <string name="try_again">Try Again?</string>
     <string name="position">Position</string>
@@ -53,5 +53,6 @@
     <string name="next3">Finish</string>
     <string name="home">Home</string>
     <string name="infodescription">This application was developed in the ambit of the Context Aware Systems class</string>
+    <string name="exercises">Exercises</string>
 
 </resources>
