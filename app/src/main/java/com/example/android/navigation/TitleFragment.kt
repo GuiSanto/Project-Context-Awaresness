@@ -20,11 +20,9 @@ class TitleFragment : Fragment() {
 
         //The complete onClickListener with Navigation
         binding.playButton.setOnClickListener { view : View ->
-            /*
-            FAZER BOTÃO
-             */
+            view.findNavController()
+                .navigate(TitleFragmentDirections.actionTitleFragmentToLivePreviewFragment())
         }
-
 
         setHasOptionsMenu(true)
         return binding.root
@@ -43,4 +41,53 @@ class TitleFragment : Fragment() {
     }
 
 
+/*
+    private fun allRuntimePermissionsGranted(context: Context): Boolean {
+        for (permission in REQUIRED_RUNTIME_PERMISSIONS) {
+            permission?.let {
+                if (!isPermissionGranted(context, it)) {
+                    return false
+                }
+            }
+        }
+        return true
+    }
+
+    private fun getRuntimePermissions(context: Context) {
+        val permissionsToRequest = ArrayList<String>()
+        for (permission in REQUIRED_RUNTIME_PERMISSIONS) {
+            permission?.let {
+                if (!isPermissionGranted(context, it)) {
+                    permissionsToRequest.add(permission)
+                }
+            }
+        }
+
+        if (permissionsToRequest.isNotEmpty()) {
+            requestPermissions(permissionsToRequest.toTypedArray(),
+                PERMISSION_REQUESTS)
+        }
+    }
+
+    private fun isPermissionGranted(context: Context, permission: String): Boolean {
+        if (ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED
+        ) {
+            Log.i(TAG, "Permission granted: $permission")
+            return true
+        }
+        Log.i(TAG, "Permission NOT granted: $permission")
+        return false
+    }
+
+    companion object {
+        private const val TAG = "EntryChoiceActivity"
+        private const val PERMISSION_REQUESTS = 1
+
+        private val REQUIRED_RUNTIME_PERMISSIONS =
+            arrayOf(
+                Manifest.permission.CAMERA,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE
+            )
+    }*/
 }

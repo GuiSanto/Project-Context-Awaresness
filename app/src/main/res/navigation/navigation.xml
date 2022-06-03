@@ -9,7 +9,11 @@
         android:id="@+id/titleFragment"
         android:name="com.example.android.navigation.TitleFragment"
         android:label="fragment_title"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_livePreviewFragment"
+            app:destination="@id/livePreviewFragment" />
+    </fragment>
     <fragment
         android:id="@+id/rulesFragment"
         android:name="com.example.android.navigation.RulesFragment"
@@ -52,4 +56,9 @@
             app:popUpTo="@id/viewPagerFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/livePreviewFragment"
+        android:name="com.example.android.navigation.LivePreviewFragment"
+        android:label="fragment_live_preview"
+        tools:layout="@layout/fragment_live_preview" />
 </navigation>
